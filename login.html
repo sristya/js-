@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRASAD LOGIN</title>
+</head>
+<body>
+    <style>
+        body {
+            background-position: center;
+            background-size: cover;
+            min-height: 100vh;
+            width: 100%;
+            background-color: aquamarine;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            margin-bottom: right ;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .form-box {
+            position: relative;
+            width: 400px;
+            height: 500px;
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            border-radius: 20px;
+            backdrop-filter: blur(15px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .form-box h2 {
+            color: rgb(157, 171, 184);
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .input-box {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .input-box input {
+            width: 100%;
+            height: 45px;
+            background: transparent;
+            border: none;
+            outline: none;
+            border-bottom: 2px solid #a9a0a0;
+            padding: 0 20px 0 5px;
+            color: #fff;
+            font-size: 16px;
+        }
+
+        input::placeholder {
+            color: #881c1c;
+        }
+
+        .btn {
+            color: #fff;
+            background: blue;
+            width: 100%;
+            height: 50px;
+            border-radius: 5px;
+            outline: none;
+            border: none;
+            font-size: 17px;
+            cursor: pointer;
+            box-shadow: 3px 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .group {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .group span a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .group a:focus {
+            text-decoration: underline;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<!-- First, we have a Registration Form -->
+<div class="container">
+    <div class="form-box">
+        <h2>SIGN IN</h2>
+        <div class="input-box">
+            <input type="text" name="LOGIN" placeholder="LOGIN">
+        </div>
+        <div class="input-box">
+            <input type="email" name="Email" placeholder="Email">
+        </div>
+        <div class="input-box">
+            <input type="password" name="Password" placeholder="Password">
+        </div>
+        
+        <div class="button">
+            <H1 onclick="login()">LOGIN</H1>
+        </div>
+
+    </div>
+</div>
+<script>
+    function login(){
+        window.open("./js.get.html","self")
+    }
+</script>
+
+</body>
+</html>
